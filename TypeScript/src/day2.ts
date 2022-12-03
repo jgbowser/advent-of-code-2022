@@ -77,7 +77,7 @@ rounds.forEach((r) => {
   const opponentChoice = choices[0] as OpponentChoice;
   const outcome = choices[1] as MyOption;
 
-  switch (outcomeMap[outcome]) {
+  switch (outcomeMap[outcome] as Result) {
     case "lose":
       score2 += losePointsMap[opponentChoice];
       break;
