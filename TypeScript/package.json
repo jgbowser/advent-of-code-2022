@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^18.11.10"
+  },
+  "scripts": {
+    "start": "tsc && node ./build/day$DAY.js"
   }
 }
